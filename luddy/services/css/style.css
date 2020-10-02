@@ -1,0 +1,864 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: circe-bold;
+    src: url('../fonts/CirceRounded-AltBold.ttf');
+}
+
+@font-face {
+    font-family: circe-black;
+    src: url('../fonts/circe-extrabold.ttf');
+}
+
+@font-face {
+    font-family: circe-light;
+    src: url('../fonts/circe-light.ttf');
+}
+
+button:focus, button:active, a:focus, a:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+a::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+
+.logo {
+    margin-left: 109px;
+    margin-top: 34px;
+    position: absolute;
+}
+
+.navbar {
+    background: transparent !important;
+    margin-right: 30px;
+}
+
+.nav-item {
+    margin-right: 100px;
+    margin-top: 32px;
+    font-family: circe-bold;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #444444 !important;
+    transition: 0.6s;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.navbar-nav {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+
+  .logo {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+
+@media (max-width: 991px) {
+    .navbar-nav {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1.05s;
+  animation-duration: 1.05s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+}
+
+@media (max-width: 1226px) {
+    .logo {
+        margin-left: 10px;
+    }
+    .navbar {
+        margin-right: 0;
+    }
+    .nav-item {
+        margin-right: 20px;
+    }
+    .navbar-toggler {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        margin-bottom: -33px;
+    }
+}
+
+.heading-text {
+    font-family: circe-black;
+    font-size: 40px;
+    color: #ff3355;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 130px;
+}
+
+.youtube-logo {
+    position: absolute;
+    left: 15%;
+    transform: translate(-15%);
+    z-index: 1;
+    margin-top: 96px;
+}
+
+.yt-hit {
+    position: absolute;
+    z-index: 2;
+    margin-top: -415px;
+    width: 101px;
+    height: 36px;
+    background-color: #ff3355;
+    border-radius: 10px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    color: #fcfcfc;
+    font-size: 15px;
+    font-family: circe-bold;
+    text-align: center;
+    padding-top: 7.25px;
+    margin-left: 299px;
+}
+
+.youtube-inner {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 15%;
+    transform: translate(-15%);
+    z-index: 3;
+    margin-top: 496px;
+}
+
+.yt-text {
+    font-family: circe-bold;
+    color: #1e1e1e;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 24px;
+}
+
+.yt-desc {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: circe-light;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.yt-portfolio {
+    border: 1px solid #686868;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    width: 139px;
+    height: 48px;
+    text-align: center;
+    color: #ff3355;
+    font-size: 19px;
+    font-family: circe-light;
+    padding-top: 3.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 132px;
+    margin-right: 129px;
+    background: transparent;
+}
+
+.yt-portfolio:hover {
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.yt-buy {
+    width: 158px;
+    height: 48px;
+    background-color: #ff3355;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    font-family: circe-light;
+    border: none;
+    margin-left: 123px;
+    margin-top: 13px;
+    transition: 0.7s;
+}
+
+.yt-buy:hover {
+    background-color: #fff;
+    color: #ff3355;
+    font-size: 21px;
+}
+
+
+.vkontakte-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 4;
+    margin-top: 96px;
+}
+
+.vk-hit {
+    position: absolute;
+    z-index: 5;
+    margin-top: -415px;
+    width: 101px;
+    height: 36px;
+    background-color: #ff3355;
+    border-radius: 10px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    color: #fcfcfc;
+    font-size: 15px;
+    font-family: circe-bold;
+    text-align: center;
+    padding-top: 7.25px;
+    margin-left: 299px;
+}
+
+.vkontakte-inner {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 6;
+    margin-top: 496px;
+}
+
+.vk-text {
+    font-family: circe-bold;
+    color: #1e1e1e;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 24px;
+}
+
+.vk-desc {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: circe-light;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.vk-portfolio {
+    border: 1px solid #686868;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    width: 139px;
+    height: 48px;
+    text-align: center;
+    color: #ff3355;
+    font-size: 19px;
+    font-family: circe-light;
+    padding-top: 3.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 132px;
+    margin-right: 129px;
+    background: transparent;
+}
+
+.vk-portfolio:hover {
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.vk-buy {
+    width: 158px;
+    height: 48px;
+    background-color: #ff3355;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    font-family: circe-light;
+    border: none;
+    margin-left: 123px;
+    margin-top: 13px;
+    transition: 0.7s;
+}
+
+.vk-buy:hover {
+    background-color: #fff;
+    color: #ff3355;
+    font-size: 21px;
+}
+
+.twitch-logo {
+    position: absolute;
+    left: 85%;
+    transform: translate(-85%);
+    z-index: 7;
+    margin-top: 48px;
+}
+
+.twitch-hit {
+    position: absolute;
+    z-index: 8;
+    background-color: #ff3355;
+    width: 101px;
+    height: 36px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    color: #fcfcfc;
+    font-size: 15px;
+    font-family: circe-bold;
+    text-align: center;
+    padding-top: 7.25px;
+    margin-top: 30px;
+    margin-left: -41px;
+}
+
+.twitch-inner {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 85%;
+    transform: translate(-85%);
+    z-index: 9;
+    margin-top: 496px;
+}
+
+.twitch-text {
+    font-family: circe-bold;
+    color: #1e1e1e;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 24px;
+}
+
+.twitch-desc {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: circe-light;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.twitch-portfolio {
+    border: 1px solid #686868;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    width: 139px;
+    height: 48px;
+    text-align: center;
+    color: #ff3355;
+    font-size: 19px;
+    font-family: circe-light;
+    padding-top: 3.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 132px;
+    margin-right: 129px;
+    background: transparent;
+}
+
+.twitch-portfolio:hover {
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.twitch-buy {
+    width: 158px;
+    height: 48px;
+    background-color: #ff3355;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    font-family: circe-light;
+    border: none;
+    margin-left: 123px;
+    margin-top: 13px;
+    transition: 0.7s;
+}
+
+.twitch-buy:hover {
+    background-color: #fff;
+    color: #ff3355;
+    font-size: 21px;
+}
+
+.banner-logo {
+    position: absolute;
+    left: 15%;
+    transform: translate(-15%);
+    z-index: 9;
+    margin-top: 96px;
+    margin-top: 521px;
+}
+
+.banner-inner {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 15%;
+    transform: translate(-15%);
+    z-index: 10;
+    margin-top: 496px;
+    margin-top: 1442px;
+}
+
+.banner-text {
+    font-family: circe-bold;
+    color: #1e1e1e;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 24px;
+}
+
+.banner-desc {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: circe-light;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.banner-portfolio {
+    border: 1px solid #686868;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    width: 139px;
+    height: 48px;
+    text-align: center;
+    color: #ff3355;
+    font-size: 19px;
+    font-family: circe-light;
+    padding-top: 3.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 132px;
+    margin-right: 129px;
+    background: transparent;
+}
+
+.banner-portfolio:hover {
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.banner-buy {
+    width: 158px;
+    height: 48px;
+    background-color: #ff3355;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    font-family: circe-light;
+    border: none;
+    margin-left: 123px;
+    margin-top: 13px;
+    transition: 0.7s;
+}
+
+.banner-buy:hover {
+    background-color: #fff;
+    color: #ff3355;
+    font-size: 21px;
+}
+
+.site-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 11;
+    margin-top: 521px;
+}
+
+
+.site-inner {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 12;
+    margin-top: 496px;
+    margin-top: 1442px;
+}
+
+.site-text {
+    font-family: circe-bold;
+    color: #1e1e1e;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 24px;
+}
+
+.site-desc {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: circe-light;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.site-portfolio {
+    border: 1px solid #686868;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    width: 139px;
+    height: 48px;
+    text-align: center;
+    color: #ff3355;
+    font-size: 19px;
+    font-family: circe-light;
+    padding-top: 3.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 132px;
+    margin-right: 129px;
+    background: transparent;
+}
+
+.site-portfolio:hover {
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.site-buy {
+    width: 113px;
+    height: 48px;
+    background-color: #ff3355;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    font-family: circe-light;
+    border: none;
+    margin-left: 145px;
+    margin-top: 13px;
+    transition: 0.7s;
+}
+
+.site-buy:hover {
+    background-color: #fff;
+    color: #ff3355;
+    font-size: 21px;
+}
+
+.another-logo {
+    position: absolute;
+    left: 85%;
+    transform: translate(-85%);
+    z-index: 13;
+    margin-top: 521px;
+}
+
+.another-inner {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    left: 85%;
+    transform: translate(-85%);
+    z-index: 14;
+    margin-top: 496px;
+    margin-top: 1442px;
+    margin-bottom: 100px;
+}
+
+.another-text {
+    font-family: circe-bold;
+    color: #1e1e1e;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 24px;
+}
+
+.another-desc {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: circe-light;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.another-portfolio {
+    border: 1px solid #686868;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    width: 139px;
+    height: 48px;
+    text-align: center;
+    color: #ff3355;
+    font-size: 19px;
+    font-family: circe-light;
+    padding-top: 3.5px;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-left: 132px;
+    margin-right: 129px;
+    background: transparent;
+}
+
+.another-portfolio:hover {
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.another-buy {
+    width: 138px;
+    height: 48px;
+    background-color: #ff3355;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #fff;
+    font-family: circe-light;
+    border: none;
+    margin-left: 131px;
+    margin-top: 13px;
+    transition: 0.7s;
+}
+
+.another-buy:hover {
+    background-color: #fff;
+    color: #ff3355;
+    font-size: 21px;
+}
+
+@media (max-width: 1600px) {
+
+    .vk-hit,
+    .yt-hit,
+    .twitch-hit {
+        display: none;
+    }
+
+    .youtube-logo,
+    .youtube-inner {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .vkontakte-logo {
+        margin-top: 1026px;
+    }
+    .vkontakte-inner {
+        margin-top: 1425px;
+    }
+
+
+    .twitch-logo,
+    .twitch-inner {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .twitch-logo {
+        margin-top: 975px;
+    }
+
+    .twitch-inner {
+        margin-top: 2350px;
+    }
+
+    .banner-logo,
+    .banner-inner {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .banner-logo {
+        margin-top: 1445px;
+    }
+
+    .banner-inner {
+        margin-top: 3290px;
+    }
+
+    .site-logo {
+        margin-top: 1915px;
+    }
+    .site-inner {
+        margin-top: 4230px;
+    }
+
+    .another-logo,
+    .another-inner {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .another-logo {
+        margin-top: 2390px;
+    }
+
+    .another-inner {
+        margin-top: 5180px;
+    }
+}
+
+@media (max-width: 375px) {
+    .another-text {
+        margin-left: 40px;
+    }
+    .yt-text {
+        margin-left: 51px;
+    }
+    .vk-text {
+        margin-left: 85px;
+    }
+    .twitch-text {
+        margin-left: 60px;
+    }
+    .banner-text {
+        margin-left: 90px;
+    }
+    .site-text {
+        margin-left: 100px;
+    }
+    .another-desc,
+    .yt-desc,
+    .vk-desc,
+    .twitch-desc,
+    .banner-desc,
+    .site-desc {
+        font-size: 15.5px;
+        margin-left: 30px;
+    }
+    .another-inner {
+        margin-bottom: 50px;
+    }
+}
