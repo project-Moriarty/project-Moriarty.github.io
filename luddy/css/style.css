@@ -21,6 +21,11 @@ html {
     src: url('../fonts/circe-light.ttf');
 }
 
+@font-face {
+    font-family: circe-regular;
+    src: url('../fonts/circe-regular.ttf');
+}
+
 button:focus, button:active, a:focus, a:active {
     outline: none;
 }
@@ -369,7 +374,7 @@ a::-moz-focus-inner {
 }
 
 .reputation-description {
-    font-family: circe-light;
+    font-family: circe-regular;
     color: #f8f8f8;
     font-size: 18px;
     line-height: 27px;
@@ -396,7 +401,7 @@ a::-moz-focus-inner {
 }
 
 .watch-description {
-    font-family: circe-light;
+    font-family: circe-regular;
     color: #f8f8f8;
     font-size: 18px;
     line-height: 27px;
@@ -421,7 +426,7 @@ a::-moz-focus-inner {
 }
 
 .star-description {
-    font-family: circe-light;
+    font-family: circe-regular;
     color: #f8f8f8;
     font-size: 18px;
     line-height: 27px;
@@ -488,7 +493,7 @@ a::-moz-focus-inner {
     }
     .star-description {
         position: static;
-        transform: translate(0%, 635%);
+        transform: translate(0%, 630%);
     }
 }
 
@@ -689,7 +694,7 @@ a::-moz-focus-inner {
 
 .background-carousel {
     width: 80%;
-    height: 625px;
+    height: 675px;
     background: url('../img/carousel-background.png'), #f6f6f6;
     box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
@@ -710,7 +715,7 @@ a::-moz-focus-inner {
 
 .carousel-inner {
     width: 960px;
-    height: 539px;
+    height: 589px;
     border-radius: 18px;
 }
 
@@ -756,11 +761,11 @@ a::-moz-focus-inner {
 @media (max-width: 1079px) {
     .carousel-indicators li {
         margin-right: 20px;
-        margin-top: -470px;
+        margin-top: -520px;
     }
     .carousel-control-prev,
     .carousel-control-next {
-        margin-top: 580px;
+        margin-top: 630px;
     }
     .carousel-control-prev {
         margin-left: 300px;
