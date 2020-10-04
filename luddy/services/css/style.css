@@ -34,7 +34,7 @@ a::-moz-focus-inner {
     border: 0;
 }
 
-.logo {
+.navbar-brand {
     margin-left: 109px;
     margin-top: 34px;
     position: absolute;
@@ -94,7 +94,7 @@ a::-moz-focus-inner {
   }
   }
 
-  .logo {
+  .navbar-brand {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   -webkit-animation-duration: 1.5s;
@@ -829,6 +829,7 @@ a::-moz-focus-inner {
         margin-top: 5180px;
     }
 }
+
 
 @media (max-width: 375px) {
     .another-text {
