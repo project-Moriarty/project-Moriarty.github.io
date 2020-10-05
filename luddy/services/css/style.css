@@ -163,7 +163,7 @@ a::-moz-focus-inner {
 }
 
 @media (max-width: 1226px) {
-    .logo {
+    .navbar-brand {
         margin-left: 10px;
     }
     .navbar {
