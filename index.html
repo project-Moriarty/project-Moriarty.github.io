@@ -1,33 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Poppins:wght@100;200&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+    <title>Luddy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    <title>project Moriarty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <div class="border-everything">
-    <div class="buttons-language-versions">
-        <a onclick="rus_vers_button()" id="rus_vers_button" href="index.html">РУС</a>
-        <a id="eng_vers_button" href="other/eng_version.html">ENG</a>
+<img src="img/logo.png" alt="" class="logo">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="rules/index.html">Правила</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Отзывы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Портфолио</a>
+      </li>
+        <li class="nav-item">
+            <a href="services/index.html" class="nav-link">Услуги</a>
+        </li>
+        <li class="nav-item">
+            <a href="https://vk.com/luddy" class="nav-link">Контакты</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+<p class="heading-text">
+    Luddy - Кто я такой и почему мне<br>
+    можно доверять
+</p>
+<div class="heading-background mx-auto">
+    <p>
+        Я профессиональный дизайнер, который занимается своим<br>
+        делом не первый год. Мои работы полностью уникальны, а<br>
+        не шаблонные работы. У меня есть много положительных отзывов<br>
+        заказчиков и много других гарантий
+    </p>
+    <button class="reviews-button">Отзывы</button>
+    <button class="portfolio-button">Портфолио</button>
+</div>
+<div class="reasons">
+    <p class="why-we">Почему именно я?</p>
+        <img src="img/reputation-logo.png" alt="" class="reputation-logo">
+    <p class="reputation-text">Отличная репутация</p>
+    <p class="reputation-description">
+        У меня самая лучшая репутация на рынке<br>
+        дизайна. Доступные цены и хорошое качество обслуживания.<br>
+        Сотни довольных отзывов и многое другое. Каждый заказ очень<br>
+        важен для нас, ведь мы работаем не ради денег, а ради удовольствия.
+    </p>
+    <img src="img/watch-logo.png" alt="" class="watch-logo">
+    <p class="watch-text text-center">Скорость выполнения</p>
+    <p class="watch-description text-center">
+        Всегда для заказчика важно время выполнения работы.<br>
+        Все работы всё точно в срок. Обычное<br>
+        время ожидания не составит трёх дней, зачастую заказы<br>
+        выполняются от 24 часов и более. Ваш товар не будет<br>
+        шаблоном, а он будет полностью уникален.
+    </p>
+    <img src="img/star-logo.png" alt="" class="star-logo">
+    <p class="star-text">Дополнительные бонусы</p>
+    <p class="star-description">
+        Клиенты  получают дополнительные бонусы.<br>
+        Один из них - это после заказа написать положительный отзыв<br>
+        и при следующих заказах будет дополнительная скидка в 10%.<br>
+        Если ты наш постоянный клиент, то раз в 5 заказов ты будешь<br>
+        получать дополнительный бонус на выбор. И многое другое,<br>
+        чтобы узнать подробней ты можешь написать нам.
+    </p>
+</div>
+<p class="portfolio-heading text-center">Немного из портфолио</p>
+<div class="background-carousel mx-auto">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner mx-auto">
+    <div class="carousel-item active">
+      <img src="img/first-carousel-item.png" class="d-block" alt="...">
     </div>
-    <div class="buttons-color-theme-versions">
-        <a id="dark_theme_button" onclick="dark_theme_rus_button()" href="#">темная<br>тема</a>
-        <a id="light_theme_button" href="other/light_theme.html">светлая<br>тема</a>
+    <div class="carousel-item">
+      <img src="img/second-carousel-item.png" class="d-block" alt="...">
     </div>
-    <div class="background-letter">
-        M
+    <div class="carousel-item">
+      <img src="img/third-carousel-item.png" class="d-block" alt="...">
     </div>
-    <div class="heading-text">
-        проект Мориарти
+      <div class="carousel-item">
+          <img src="img/fourth-carousel-item.png" alt="..." class="d-block">
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <img src="img/carousel-prev-control.png" alt="">
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <img src="img/carousel-next-control.png" alt="">
+  </a>
+</div>
+</div>
+<button class="show-more">Показать еще</button>
+<p class="hits-heading text-center">Хит продаж</p>
+<div class="youtube-logo">
+    <img src="img/youtube-logo.png" alt="" class="yt-logo">
+    <div class="price-yt">
+        <p class="price-yt-text">-50%</p>
     </div>
-    <div class="button-soon">
-        <button onclick="soon_button()">скоро</button>
+</div>
+<div class="youtube-inner">
+    <p class="oform-yt-heading">Оформление YouTube</p>
+    <p class="oform-yt-text">
+        В оформление для YouTube входит:<br>
+        шапка, аватар. Другие услуги<br>
+        за дополнительную плату.<br>
+        Важно знать что:<br>
+        1. Мы работаем по предоплате <b>50%</b><br>
+        2. Сроки выполнения до <b>трёх</b> дней<br>
+        3. Возврат денежных средств <b>невозможен</b><br>
+        4. Правки <b>бесплатны</b><br>
+    </p>
+    <button class="portfolio-yt">Портфолио</button>
+    <button class="buy-yt">Заказать 750₽</button>
+</div>
+<div class="vk-logo">
+    <img src="img/vk-logo.png" alt="" class="vkontakte-logo">
+    <div class="price-vk">
+        <p class="price-vk-text">-50%</p>
     </div>
+</div>
+<div class="vk-inner">
+    <p class="oform-vk-heading">Оформление VK</p>
+    <p class="oform-vk-text">
+        В оформление для VK входит:<br>
+        шапка, аватар. Другие услуги<br>
+        за дополнительную плату.<br>
+        Важно знать что:<br>
+        1. Мы работаем по предоплате <b>50%</b><br>
+        2. Сроки выполнения до <b>трёх</b> дней<br>
+        3. Возврат денежных средств <b>невозможен</b><br>
+        4. Правки <b>бесплатны</b>
+    </p>
+    <button class="portfolio-vk">Портфолио</button>
+    <button class="buy-vk">Заказать 750₽</button>
+</div>
+<div class="twitch-logo">
+    <img src="img/twitch-logo.png" alt="" class="tw-logo">
+    <div class="price-twitch">
+        <p class="price-twitch-text">-50%</p>
     </div>
+</div>
+<div class="twitch-inner">
+    <p class="oform-twitch-heading">Оформление Twitch</p>
+    <p class="oform-twitch-text">
+        В оформление для Twitch входит:<br>
+        шапка, аватар. Другие услуги<br>
+        за дополнительную плату.<br>
+        Важно знать что:<br>
+        1. Мы работаем по предоплате <b>50%</b><br>
+        2. Сроки выполнения до <b>трёх</b> дней<br>
+        3. Возврат денежных средств <b>невозможен</b><br>
+        4. Правки <b>бесплатны</b>
+    </p>
+    <button class="portfolio-twitch">Портфолио</button>
+    <button class="buy-twitch">Заказать 750₽</button>
+</div>
+<footer></footer>
 </body>
 </html>
