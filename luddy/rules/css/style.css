@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: circe-bold;
+    src: url('../fonts/Circe-Bold.ttf');
+}
+
+@font-face {
+    font-family: circe-black;
+    src: url('../fonts/circe-extrabold.ttf');
+}
+
+@font-face {
+    font-family: circe-light;
+    src: url('../fonts/circe-light.ttf');
+}
+
+@font-face {
+    font-family: circe-regular;
+    src: url('../fonts/circe-regular.ttf');
+}
+
+button:focus, button:active, a:focus, a:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+a::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+
+.navbar-brand {
+    margin-left: 109px;
+    margin-top: 34px;
+    position: absolute;
+}
+
+.navbar {
+    background: transparent !important;
+    margin-right: 30px;
+}
+
+.nav-item {
+    margin-right: 100px;
+    margin-top: 32px;
+    font-family: circe-bold;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #444444 !important;
+    transition: 0.6s;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.navbar-nav {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+
+  .navbar-brand {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+
+@media (max-width: 991px) {
+    .navbar-nav {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1.05s;
+  animation-duration: 1.05s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+}
+
+@media (max-width: 1226px) {
+    .navbar-brand {
+        margin-left: 10px;
+    }
+    .navbar {
+        margin-right: 0;
+    }
+    .nav-item {
+        margin-right: 20px;
+    }
+    .navbar-toggler {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        margin-bottom: -33px;
+    }
+}
+
+.heading-text {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.175);
+    color: #ff3355;
+    font-size: 40px;
+    font-family: circe-black;
+    margin-top: 100px;
+}
+
+.first-rule,
+.second-rule,
+.third-rule,
+.fourth-rule,
+.fifth-rule,
+.sixth-rule,
+.seventh-rule {
+    color: #000000;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.125);
+    font-size: 24px;
+    font-family: circe-regular;
+    margin-left: 197px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1365px) {
+    .first-rule,
+    .second-rule,
+    .third-rule,
+    .fourth-rule,
+    .fifth-rule,
+    .sixth-rule,
+    .seventh-rule {
+        text-align: center;
+        margin-left: 0;
+    }
+}
