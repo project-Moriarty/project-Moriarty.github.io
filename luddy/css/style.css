@@ -228,7 +228,7 @@ a::-moz-focus-inner {
   }
 
 .heading-background {
-    background: url('../img/heading-background.png'), #F6F6F6;
+    background: #F6F6F6;
     box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
     width: 867px;
@@ -695,7 +695,7 @@ a::-moz-focus-inner {
 .background-carousel {
     width: 80%;
     height: 675px;
-    background: url('../img/carousel-background.png'), #f6f6f6;
+    background: #f6f6f6;
     box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
     background-size: cover;
