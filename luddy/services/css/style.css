@@ -383,7 +383,8 @@ a::-moz-focus-inner {
     color: #fff;
     font-family: circe-light;
     border: none;
-    margin-left: 123px;
+    margin-left: 122px;
+    margin-right: 120px;
     margin-top: 13px;
     transition: 0.7s;
 }
@@ -485,7 +486,7 @@ a::-moz-focus-inner {
     color: #fff;
     font-family: circe-light;
     border: none;
-    margin-left: 123px;
+    margin-left: 122px;
     margin-top: 13px;
     transition: 0.7s;
 }
@@ -538,50 +539,6 @@ a::-moz-focus-inner {
     padding-left: 35px;
 }
 
-.banner-portfolio {
-    border: 1px solid #686868;
-    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
-    border-radius: 8px;
-    width: 139px;
-    height: 48px;
-    text-align: center;
-    color: #ff3355;
-    font-size: 19px;
-    font-family: circe-light;
-    padding-top: 3.5px;
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 132px;
-    margin-right: 129px;
-    background: transparent;
-}
-
-.banner-portfolio:hover {
-    color: #fff;
-    background-color: #ff3355;
-}
-
-.banner-buy {
-    width: 158px;
-    height: 48px;
-    background-color: #ff3355;
-    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    font-size: 19px;
-    color: #fff;
-    font-family: circe-light;
-    border: none;
-    margin-left: 123px;
-    margin-top: 13px;
-    transition: 0.7s;
-}
-
-.banner-buy:hover {
-    background-color: #fff;
-    color: #ff3355;
-    font-size: 21px;
-}
-
 .site-logo {
     position: absolute;
     left: 50%;
@@ -622,50 +579,6 @@ a::-moz-focus-inner {
     font-family: circe-light;
     padding-top: 7px;
     padding-left: 35px;
-}
-
-.site-portfolio {
-    border: 1px solid #686868;
-    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
-    border-radius: 8px;
-    width: 139px;
-    height: 48px;
-    text-align: center;
-    color: #ff3355;
-    font-size: 19px;
-    font-family: circe-light;
-    padding-top: 3.5px;
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 132px;
-    margin-right: 129px;
-    background: transparent;
-}
-
-.site-portfolio:hover {
-    color: #fff;
-    background-color: #ff3355;
-}
-
-.site-buy {
-    width: 113px;
-    height: 48px;
-    background-color: #ff3355;
-    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    font-size: 19px;
-    color: #fff;
-    font-family: circe-light;
-    border: none;
-    margin-left: 145px;
-    margin-top: 13px;
-    transition: 0.7s;
-}
-
-.site-buy:hover {
-    background-color: #fff;
-    color: #ff3355;
-    font-size: 21px;
 }
 
 .another-logo {
@@ -710,47 +623,134 @@ a::-moz-focus-inner {
     padding-left: 35px;
 }
 
+.banner-portfolio {
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    margin-left: 120px;
+    width: 139px;
+    height: 48px;
+    background: transparent;
+    font-family: circe-light;
+    color: #ff3355;
+    font-size: 19px;
+    transition: 0.65s;
+    margin-top: 22px;
+}
+
+.banner-buy {
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: #ff3355;
+    width: 160px;
+    height: 48px;
+    margin-left: 110px;
+    margin-top: 12px;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: circe-light;
+    transition: 0.7s;
+}
+
+.banner-buy:hover {
+    font-size: 21px;
+    color: #ff3355;
+    background-color: #fff;
+}
+
+.banner-portfolio:hover {
+    border: none;
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.site-portfolio {
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    margin-left: 130px;
+    width: 139px;
+    height: 48px;
+    background: transparent;
+    font-family: circe-light;
+    color: #ff3355;
+    font-size: 19px;
+    transition: 0.65s;
+    margin-top: 22px;
+}
+
+.site-portfolio:hover {
+    border: none;
+    color: #fff;
+    background-color: #ff3355;
+}
+
+.site-buy {
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: #ff3355;
+    width: 113px;
+    height: 48px;
+    margin-left: 143.5px;
+    margin-right: 142px;
+    margin-top: 12px;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: circe-light;
+    transition: 0.7s;
+}
+
+.site-buy:hover {
+    font-size: 21px;
+    color: #ff3355;
+    background-color: #fff;
+}
+
 .another-portfolio {
     border: 1px solid #686868;
+    box-sizing: border-box;
     filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.3));
     border-radius: 8px;
     width: 139px;
     height: 48px;
-    text-align: center;
+    background: transparent;
+    margin-left: 130px;
+    margin-top: 95px;
     color: #ff3355;
     font-size: 19px;
     font-family: circe-light;
-    padding-top: 3.5px;
-    cursor: pointer;
-    transition: 0.6s;
-    margin-left: 132px;
-    margin-right: 129px;
-    background: transparent;
+    transition: 0.7s;
 }
 
 .another-portfolio:hover {
     color: #fff;
     background-color: #ff3355;
+    border: none;
 }
 
 .another-buy {
-    width: 138px;
-    height: 48px;
-    background-color: #ff3355;
     box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    font-size: 19px;
+    background-color: #ff3355;
+    width: 138px;
+    height: 48px;
+    border: none;
+    background-color: #ff3355;
     color: #fff;
     font-family: circe-light;
-    border: none;
+    font-size: 19px;
+    margin-top: 12px;
     margin-left: 131px;
-    margin-top: 13px;
     transition: 0.7s;
 }
 
 .another-buy:hover {
-    background-color: #fff;
     color: #ff3355;
+    background-color: #fff;
     font-size: 21px;
 }
 
