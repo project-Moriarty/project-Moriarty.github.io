@@ -254,7 +254,7 @@ backdrop-filter: blur(4px);
     border: none;
     font-size: 17px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #135A41;
     text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     font-family: circe-regular;
     left: 315px;
@@ -263,7 +263,7 @@ backdrop-filter: blur(4px);
 }
 
 .first-course-btn:hover {
-    color: green;
+    color: black;
 }
 
 .first-course-name {
@@ -307,7 +307,7 @@ backdrop-filter: blur(4px);
     border: none;
     font-size: 17px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #135A41;
     text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     font-family: circe-regular;
     transition: 0.65s;
@@ -316,7 +316,7 @@ backdrop-filter: blur(4px);
 }
 
 .second-course-btn:hover {
-    color: green;
+    color: black;
 }
 
 .second-course-name {
@@ -358,7 +358,7 @@ backdrop-filter: blur(4px);
     border: none;
     font-size: 17px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #135A41;
     text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     font-family: circe-regular;
     transition: 0.65s;
@@ -367,7 +367,7 @@ backdrop-filter: blur(4px);
 }
 
 .third-course-btn:hover {
-    color: green;
+    color: black;
 }
 
 .third-course-name {
