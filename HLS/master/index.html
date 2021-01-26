@@ -3,21 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0">
-    <title>Курс начинающий</title>
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function(){
-            $('input.form-field').change(function() {
-                if($('input.form-field').map(function(index, domElement) {
-                   if ($(domElement).val() !== "")
-                      return domElement;
-                }).length < 2) {
-                   $("input[type='submit']").attr('disabled','disabled');                
-                } else {
-                   $("input[type='submit']").removeAttr('disabled');
-                }
-                });
-        });
-    </script>
+    <title>Курс мастер</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -29,21 +15,20 @@
 </head>
 <body>
     <img src="img/round-bg.png" alt="" class="round-bg">
-    <p class="heading-text text-center">Курс "Мастер"</p>
+    <p class="heading-text text-center">Курс Мастер</p>
     <p class="pre-heading-text text-center">Когда ты познакомился с основами ЗОЖа, то можешь<br>
         приступать к этому курсу. </p>
-        <div class="advice-rect mx-auto">Заполни заявку и получи курс!</div>
+        <div class="advice-rect mx-auto">Этот курс могут пройти те, кто прошел курс “средний”</div>
         <img src="img/advice-decor.png" alt="" class="advice-decor">
-        <div class="input-pole mx-auto">
+        <div id="ipid" class="input-pole">
+            Необходимо пройти курс “средний”,<br>
+            прежде чем приступать к этому курсу
+            <div class="line"></div>
+            <div class="back">
+                <img src="img/arrow.png" alt="">
+                <a href="../medium/index.html">Назад</a>
+            </div>
         </div>
         <img src="img/rounds-input.png" alt="" class="rounds-input">
-    <form name="input" action="img/Курс начинающий.docx" method="post">
-        <div>
-            <input placeholder="Имя" class="form-field name-input" type="text" name="user">
-        </div>
-        <div>
-            <input placeholder="Фамилия" class="form-field surname-input" type="text" name="user">        
-        </div>
-        <input class="get-btn" type="submit" value="Получить" disabled='disables'></form>
 </body>
 </html>
