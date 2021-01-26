@@ -4,20 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0">
     <title>Курс начинающий</title>
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function(){
-            $('input.form-field').change(function() {
-                if($('input.form-field').map(function(index, domElement) {
-                   if ($(domElement).val() !== "")
-                      return domElement;
-                }).length < 2) {
-                   $("input[type='submit']").attr('disabled','disabled');                
-                } else {
-                   $("input[type='submit']").removeAttr('disabled');
-                }
-                });
-        });
-    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -34,16 +20,18 @@
         и с чем его едят.</p>
         <div class="advice-rect mx-auto">Заполни заявку и получи курс!</div>
         <img src="img/advice-decor.png" alt="" class="advice-decor">
-        <div class="input-pole mx-auto">
+        <div id="ipid" class="input-pole">
         </div>
         <img src="img/rounds-input.png" alt="" class="rounds-input">
-    <form name="input" action="img/Курс начинающий.docx" method="post">
-        <div>
+        <div id="nid">
             <input placeholder="Имя" class="form-field name-input" type="text" name="user">
         </div>
-        <div>
+        <div id="snid">
             <input placeholder="Фамилия" class="form-field surname-input" type="text" name="user">        
         </div>
-        <input class="get-btn" type="submit" value="Получить" disabled='disables'></form>
+        <input class="get-btn" id="gbid" type="submit" value="Получить" onmousedown="viewDiv()">
+        <div id="download-block">
+            <a href="img/Курс начинающий.docx" download><button class="download-btn">Скачать</button></a>
+        </div>
 </body>
 </html>
