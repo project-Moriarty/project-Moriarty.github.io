@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+button:focus, button:active, a:focus, a:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+a::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+
+@font-face {
+    font-family: circe-bold;
+    src: url(../fonts/circe-bold.ttf);
+}
+
+@font-face {
+    font-family: circe-light;
+    src: url(../fonts/circe-light.ttf);
+}
+
+@font-face {
+    font-family: circe-thin;
+    src: url(../fonts/circe-thin.ttf);
+}
+
+@font-face {
+    font-family: circe-regular;
+    src: url(../fonts/10710.ttf);
+}
+
+.round-bg {
+    position: absolute;
+    right: -22px;
+    top: -22px;
+    transform: scale(0.95);
+}
+
+.heading-text {
+    color: #31a96f;
+    font-size: 50px;
+    font-family: circe-bold;
+    margin-top: 124px;
+}
+
+.pre-heading-text {
+    font-size: 28.5px;
+    line-height: 119.4%;
+    color: #31a96f;
+    font-family: circe-regular;
+    margin-top: 10px;
+}
+
+.advice-rect {
+    width: 593px;
+    height: 69px;
+    background-color: #28ca68;
+    text-align: center;
+    padding-top: 15px;
+    color: #f0f0f0;
+    font-size: 25px;
+    font-family: circe-regular;
+    margin-top: 85px;
+}
+
+.advice-decor {
+    position: absolute;
+    right: 619px;
+    top: 344px;
+}
+
+.input-pole {
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 99px;
+    width: 506px;
+    height: 248px;
+    background: rgba(141, 234, 189, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 12px;
+    border: 1px solid #8DEABD;
+}
+
+.rounds-input {
+    position: absolute;
+    top: 509px;
+    left: 51.5%;
+    transform: translate(-51.5%);
+    z-index: 3;
+}
+
+.name-input {
+    border: none;
+    border-bottom: solid 2px #c4c4c4;
+    width: 355px;
+    outline: none;
+    padding-left: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    margin-top: 130px;
+    z-index: 10;
+}
+
+.name-input[type="text"] {
+    color: #333333;
+    font-family: circe-regular;
+    font-size: 25px;
+}
+
+.surname-input {
+    border: none;
+    border-bottom: solid 2px #c4c4c4;
+    width: 355px;
+    outline: none;
+    padding-left: 15px;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    margin-top: 200px;
+    z-index: 10;
+}
+
+.surname-input[type="text"] {
+    color: #333333;
+    font-family: circe-regular;
+    font-size: 25px;
+}
+
+::-webkit-input-placeholder {
+    color: #c4c4c4;
+    font-family: circe-regular;
+    font-size: 25px;
+}
+::-moz-placeholder          {
+    color: #c4c4c4;
+    font-family: circe-regular;
+    font-size: 25px;
+}
+:-moz-placeholder           {
+    color: #c4c4c4;
+    font-family: circe-regular;
+    font-size: 25px;
+}
+:-ms-input-placeholder      {
+    color: #c4c4c4;
+    font-family: circe-regular;
+    font-size: 25px;
+}
+
+.get-btn {
+    color: #c4c4c4;
+    font-size: 25px;
+    font-family: circe-regular;
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 270px;
+    z-index: 11;
+    cursor: pointer;
+    transition: 0.65s;
+}
+
+@media (max-width:1888px) {
+    .advice-decor {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .round-bg {
+        display: none;
+    }
+}
+
+@media (max-width:592px) {
+    .advice-rect {
+        width: 100%;
+    }
+    .rounds-input {
+        display: none;
+    }
+
+}
+
+@media (max-width:363px) {
+    .advice-rect {
+        font-size: 22px;
+        padding-top: 18px;
+    }
+}
+
+
+.get-btn:hover {
+    color: black;
+}
+
+
+#download-block {
+    display: none;
+}
+
+#download-block {
+    width: 506px;
+    height: 248px;
+    background: rgba(141, 234, 189, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 12px;
+    border: 1px solid #00FF66;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 99px;
+}
+
+
+#download-block {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+
+.download-btn {
+    width: 300px;
+    height: 79px;
+    background: linear-gradient(86deg, rgba(255, 255, 255, 0.3) 0.98%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(4px);
+    font-family: circe-regular;
+    color: #135a41;
+    font-size: 25px;
+    border: none;
+    border: solid 1px #00ff66;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 84px;
+}
+
+@media (max-width: 512px) {
+    .download-btn {
+        width: 100%;
+    }
+    #download-block {
+        width: 100%;
+    }
+}

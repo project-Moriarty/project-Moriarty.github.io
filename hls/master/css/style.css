@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width:1360px) {
+    html {
+        overflow: hidden;
+    }
+}
+
+button:focus, button:active, a:focus, a:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+a::-moz-focus-inner {
+    outline: none;
+    border: 0;
+}
+
+@font-face {
+    font-family: circe-bold;
+    src: url(../fonts/circe-bold.ttf);
+}
+
+@font-face {
+    font-family: circe-light;
+    src: url(../fonts/circe-light.ttf);
+}
+
+@font-face {
+    font-family: circe-thin;
+    src: url(../fonts/circe-thin.ttf);
+}
+
+@font-face {
+    font-family: circe-regular;
+    src: url(../fonts/10710.ttf);
+}
+
+.round-bg {
+    position: absolute;
+    right: -22px;
+    bottom: -22px;
+    transform: scale(0.95);
+}
+
+.heading-text {
+    color: #31a96f;
+    font-size: 50px;
+    font-family: circe-bold;
+    margin-top: 124px;
+}
+
+.pre-heading-text {
+    font-size: 28.5px;
+    line-height: 119.4%;
+    color: #31a96f;
+    font-family: circe-regular;
+    margin-top: 10px;
+}
+
+.advice-rect {
+    width: 747px;
+    height: 87px;
+    background-color: #28ca68;
+    text-align: center;
+    padding-top: 23px;
+    padding-right: 10px;
+    color: #e4e4e4;
+    font-size: 25px;
+    font-family: circe-regular;
+    margin-top: 85px;
+}
+
+.advice-decor {
+    position: absolute;
+    right: 528px;
+    top: 356px;
+}
+
+.input-pole {
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 99px;
+    width: 506px;
+    height: 248px;
+    background: rgba(141, 234, 189, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 12px;
+    border: 1px solid #8DEABD;
+    color: #c4c4c4;
+    font-size: 25px;
+    font-family: circe-regular;
+    line-height: 119.4%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.line {
+    width: 448px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    margin-top: 10px;
+    margin-left: 29px;
+}
+
+.rounds-input {
+    position: absolute;
+    top: 509px;
+    left: 51.5%;
+    transform: translate(-51.5%);
+    z-index: 3;
+}
+
+
+.get-btn {
+    color: #c4c4c4;
+    font-size: 25px;
+    font-family: circe-regular;
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 270px;
+    z-index: 11;
+    cursor: pointer;
+    transition: 0.65s;
+}
+
+@media (max-width:1888px) {
+    .advice-decor {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .round-bg {
+        display: none;
+    }
+}
+
+@media (max-width:592px) {
+    .advice-rect {
+        width: 100%;
+    }
+    .rounds-input {
+        display: none;
+    }
+
+}
+
+@media (max-width:363px) {
+    .advice-rect {
+        font-size: 22px;
+        padding-top: 18px;
+    }
+}
+
+
+.get-btn:hover {
+    color: black;
+}
+
+
+@media (max-width: 744px) {
+    .advice-rect {
+        font-size: 23px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 323px) {
+    .advice-rect {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 528px) {
+    .input-pole {
+        width: 100%;
+    }
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.back {
+    position: absolute;
+    bottom: 13px;
+    left: 29px;
+}
+
+.back a {
+    font-family: circe-regular;
+    color: #c4c4c4;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.back a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width:419px) {
+    .back {
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
