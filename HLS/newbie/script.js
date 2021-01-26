@@ -10,3 +10,11 @@
                 }
                 });
         });
+
+        function viewDiv(){
+         document.getElementById("download-block").style.display = "block";
+         document.getElementById("nid").style.display = "none";
+         document.getElementById("snid").style.display = "none";
+         document.getElementById("gbid").style.display = "none";
+         document.getElementById("ipid").style.display = "none";
+       };
