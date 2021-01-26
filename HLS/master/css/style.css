@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
+@media (min-width:1360px) {
+    html {
+        overflow: hidden;
+    }
 }
 
 button:focus, button:active, a:focus, a:active {
@@ -41,8 +43,8 @@ a::-moz-focus-inner {
 
 .round-bg {
     position: absolute;
-    bottom: -22px;
     right: -22px;
+    bottom: -22px;
     transform: scale(0.95);
 }
 
@@ -62,12 +64,13 @@ a::-moz-focus-inner {
 }
 
 .advice-rect {
-    width: 593px;
-    height: 69px;
+    width: 747px;
+    height: 87px;
     background-color: #28ca68;
     text-align: center;
-    padding-top: 15px;
-    color: #f0f0f0;
+    padding-top: 23px;
+    padding-right: 10px;
+    color: #e4e4e4;
     font-size: 25px;
     font-family: circe-regular;
     margin-top: 85px;
@@ -75,87 +78,48 @@ a::-moz-focus-inner {
 
 .advice-decor {
     position: absolute;
-    right: 619px;
-    top: 344px;
+    right: 528px;
+    top: 356px;
 }
 
 .input-pole {
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 99px;
     width: 506px;
     height: 248px;
     background: rgba(141, 234, 189, 0.2);
     backdrop-filter: blur(25px);
     border-radius: 12px;
-    border: solid 2px #8deabd;
-    margin-top: 99px;
+    border: 1px solid #8DEABD;
+    color: #c4c4c4;
+    font-size: 25px;
+    font-family: circe-regular;
+    line-height: 119.4%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.line {
+    width: 448px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    margin-top: 10px;
+    margin-left: 29px;
 }
 
 .rounds-input {
     position: absolute;
     top: 509px;
-    left: 50%;
-    transform: translate(-50%);
-    opacity: 0.55;
+    left: 51.5%;
+    transform: translate(-51.5%);
+    z-index: 3;
 }
 
-.name-input {
-    border: none;
-    border-bottom: solid 2px #c4c4c4;
-    width: 355px;
-    outline: none;
-    padding-left: 15px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    background: transparent;
-    margin-top: -220px;
-}
-
-.name-input[type="text"] {
-    color: #333333;
-    font-family: circe-regular;
-    font-size: 25px;
-}
-
-.surname-input {
-    border: none;
-    border-bottom: solid 2px #c4c4c4;
-    width: 355px;
-    outline: none;
-    padding-left: 15px;
-    background: transparent;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    background: transparent;
-    margin-top: -150px;
-}
-
-.surname-input[type="text"] {
-    color: #333333;
-    font-family: circe-regular;
-    font-size: 25px;
-}
-
-::-webkit-input-placeholder {
-    color: #c4c4c4;
-    font-family: circe-regular;
-    font-size: 25px;
-}
-::-moz-placeholder          {
-    color: #c4c4c4;
-    font-family: circe-regular;
-    font-size: 25px;
-}
-:-moz-placeholder           {
-    color: #c4c4c4;
-    font-family: circe-regular;
-    font-size: 25px;
-}
-:-ms-input-placeholder      {
-    color: #c4c4c4;
-    font-family: circe-regular;
-    font-size: 25px;
-}
 
 .get-btn {
     color: #c4c4c4;
@@ -166,7 +130,8 @@ a::-moz-focus-inner {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: -75px;
+    margin-top: 270px;
+    z-index: 11;
     cursor: pointer;
     transition: 0.65s;
 }
@@ -197,5 +162,59 @@ a::-moz-focus-inner {
     .advice-rect {
         font-size: 22px;
         padding-top: 18px;
+    }
+}
+
+
+.get-btn:hover {
+    color: black;
+}
+
+
+@media (max-width: 744px) {
+    .advice-rect {
+        font-size: 23px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 323px) {
+    .advice-rect {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 528px) {
+    .input-pole {
+        width: 100%;
+    }
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.back {
+    position: absolute;
+    bottom: 13px;
+    left: 29px;
+}
+
+.back a {
+    font-family: circe-regular;
+    color: #c4c4c4;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.back a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width:419px) {
+    .back {
+        left: 50%;
+        transform: translate(-50%);
     }
 }
