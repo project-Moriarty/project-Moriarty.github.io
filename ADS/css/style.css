@@ -609,6 +609,11 @@ a::-moz-focus-inner {
     margin-top: 1550px;
 }
 
+@media (max-width: 525px) {
+    .third-heading {
+        font-size: 44px;
+    }
+
 .advantages {
     width: 1164px;
     height: 372px;
@@ -890,12 +895,6 @@ a::-moz-focus-inner {
     }
     .adaptive {
         display: block;
-    }
-}
-
-@media (max-width: 430px) {
-    .third-heading {
-        font-size: 13vw;
     }
 }
 
