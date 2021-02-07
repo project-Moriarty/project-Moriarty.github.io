@@ -119,6 +119,9 @@ a::-moz-focus-inner {
 }
 
 @media (max-width: 1280px) {
+    .second-pre-heading {
+        font-size: 16px;
+    }
     .logo {
         margin-left: 50px;
         margin-top: 30px;
@@ -129,6 +132,7 @@ a::-moz-focus-inner {
     }
     .pre-heading-text {
         margin-left: 0;
+        font-size: 19px;
     }
     .play-btn {
         margin-left: 0;
@@ -200,7 +204,7 @@ a::-moz-focus-inner {
 
 @media (max-width: 504px) {
     .heading-text {
-        font-size: 15vw;
+        font-size: 13vw;
     }
 }
 
@@ -362,9 +366,11 @@ a::-moz-focus-inner {
     }
     .community-heading {
         margin-top: 150px;
+        font-size: 49px;
     }
     .community-pre-heading {
         margin-top: 240px;
+        font-size: 16px;
     }
 
     .economy-img {
@@ -375,6 +381,7 @@ a::-moz-focus-inner {
         transform: translate(50%);
     }
     .economy-heading {
+        font-size: 49px;
         margin-top: 930px;
         margin-left: 0;
         position: absolute;
@@ -382,6 +389,7 @@ a::-moz-focus-inner {
         transform: translate(-50%);
     }
     .economy-pre-heading {
+        font-size: 16px;
         position: absolute;
         margin-left: 0;
         left: 50%;
@@ -402,6 +410,7 @@ a::-moz-focus-inner {
         right: 50%;
         transform: translate(50%);
         margin-top: 1685px;
+        font-size: 49px;
     }
     .atmosphere-pre-heading {
         position: absolute;
@@ -409,6 +418,7 @@ a::-moz-focus-inner {
         right: 50%;
         transform: translate(50%);
         margin-top: 1810px;
+        font-size: 16px;
     }
 
     .creation-img {
@@ -424,6 +434,7 @@ a::-moz-focus-inner {
         left: 50%;
         transform: translate(-50%);
         margin-top: 2470px;
+        font-size: 49px;
     }
     .creation-pre-heading {
         position: absolute;
@@ -431,6 +442,7 @@ a::-moz-focus-inner {
         left: 50%;
         transform: translate(-50%);
         margin-top: 2615px;
+        font-size: 16px;
     }
 
     .third-heading {
@@ -493,10 +505,10 @@ a::-moz-focus-inner {
 
 @media (max-width: 525px) {
     .second-heading {
-        font-size: 44px;
+        font-size: 42px;
     }
     .third-heading {
-        font-size: 44px;
+        font-size: 42px;
     }
     .community-img {
         margin-top: 500px;
@@ -757,7 +769,7 @@ a::-moz-focus-inner {
 
 .adaptive p {
     font-family: acrom-regular;
-    font-size: 23px;
+    font-size: 19px;
     line-height: 123%;
     letter-spacing: -0.01em;
     color: #7289DA;
@@ -1026,7 +1038,10 @@ a::-moz-focus-inner {
     }
     .buy-info {
         margin-left: 33px;
+        font-size: 19px;
     }
+    .last-info {
+        font-size: 19px;
 }
 
 @media (max-width: 1167px) {
