@@ -474,6 +474,22 @@ a::-moz-focus-inner {
         white-space: nowrap;
     }
 
+    .community-img {
+        margin-top: 300px;
+    }
+
+    .economy-img {
+        margin-top: 1050px;
+    }
+
+    .atmosphere-img {
+        margin-top: 1850px;
+    }
+
+    .creation-img {
+        margin-top: 20px;
+    }
+
     .community-heading {
         margin-top: 50px;
     }
@@ -509,36 +525,6 @@ a::-moz-focus-inner {
     }
     .third-heading {
         font-size: 42px;
-    }
-    .community-img {
-        margin-top: 500px;
-    }
-    .economy-heading {
-        margin-top: 930px;
-    }
-    .economy-pre-heading {
-        margin-top: 1010px;
-    }
-    .economy-img {
-        margin-top: 1260px;
-    }
-    .atmosphere-heading {
-        margin-top: 1685px;   
-    }
-    .atmosphere-pre-heading {
-        margin-top: 1810px;
-    }
-    .atmosphere-img {
-        margin-top: 2000px;
-    }
-    .creation-heading {
-        margin-top: 2470px;
-    }
-    .creation-pre-heading {
-        margin-top: 2615px;
-    }
-    .creation-img {
-        margin-top: 2950px;
     }
 }
 
