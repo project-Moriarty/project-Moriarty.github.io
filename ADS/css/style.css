@@ -474,6 +474,12 @@ a::-moz-focus-inner {
 }
 
 @media (max-width: 525px) {
+    .second-heading {
+        font-size: 44px;
+    }
+    .third-heading {
+        font-size: 44px;
+    }
     .community-img {
         margin-top: 500px;
     }
