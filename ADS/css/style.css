@@ -1036,8 +1036,6 @@ a::-moz-focus-inner {
         margin-left: 33px;
         font-size: 19px;
     }
-    .last-info {
-        font-size: 19px;
 }
 
 @media (max-width: 1167px) {
@@ -1080,6 +1078,13 @@ a::-moz-focus-inner {
     .last-pre-heading {
         font-size: 18px;
     }
+    
+    .last-info,
+    .last-pre-info {
+        font-size: 17px;
+    }
+
+
 
     .advice-heading,
     .advice-info {
