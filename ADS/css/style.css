@@ -156,13 +156,13 @@ a::-moz-focus-inner {
         margin-top: 1px;
     }
     .soft {
-        margin-top: 10px;
+        margin-top: -10px;
     }
 }
 
 @media (max-width: 595px) {
     .soft {
-        margin-top: 25px;
+        margin-top: -10px;
     }
     .landing-bg {
         height: 105vh;
@@ -171,7 +171,7 @@ a::-moz-focus-inner {
 
 @media (max-width: 578px) {
     .soft {
-        margin-top: 75px;
+        margin-top: 95px;
     }
     .landing-bg {
         height: 120vh;
@@ -180,25 +180,37 @@ a::-moz-focus-inner {
 
 @media (max-width: 535px) {
     .soft {
-        margin-top: 110px;
+        margin-top: 85px;
+    }
+}
+
+@media (max-width: 505px) {
+    .soft {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 504px) {
+    .soft {
+        margin-top: -60px;
     }
 }
 
 @media (max-width: 476px) {
     .soft {
-        margin-top: 60px;
+        margin-top: -80px;
     }
 }
 
 @media (max-width: 430px) {
     .soft {
-        margin-top: 15px;
+        margin-top: -80px;
     }
 }
 
 @media (max-width: 350px) {
     .soft {
-        margin-top: -25px;
+        margin-top: -105px;
     }
 }
 
@@ -1528,3 +1540,4 @@ border-radius: 30px;
         font-size: 15px;
     }
 }
+
